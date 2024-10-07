@@ -1,12 +1,10 @@
 import Button from "../Button";
 import Card from "../Card";
 import React, { useState } from "react";
-import icon1 from "@/assets/icons/icon1.svg";
-import icon2 from "@/assets/icons/icon2.svg";
-import icon3 from "@/assets/icons/icon3.svg";
-import icon4 from "@/assets/icons/icon4.svg";
-import icon5 from "@/assets/icons/icon5.svg";
-import icon6 from "@/assets/icons/icon6.svg";
+import icon1 from "@/assets/icons-yellow/icon1.svg";
+import icon2 from "@/assets/icons-yellow/icon2.svg";
+import icon3 from "@/assets/icons-yellow/icon3.svg";
+import icon4 from "@/assets/icons-yellow/icon4.svg";
 import Modal from "../Modal";
 
 const SectionTwo: React.FC = () => {
@@ -33,13 +31,13 @@ const SectionTwo: React.FC = () => {
               "
       >
         Crédito estruturado é a{" "}
-        <span className="text-[#01e0eb]">
+        <span className="text-custom-text-title">
           opção mais viável, econômica e segura
         </span>{" "}
         para o empreendedor que deseja um negócio{" "}
-        <span className="text-[#01e0eb]">sólido</span>,{" "}
-        <span className="text-[#01e0eb]">próspero</span> e{" "}
-        <span className="text-[#01e0eb]">lucrativo</span>:
+        <span className="text-custom-text-title">sólido</span>,{" "}
+        <span className="text-custom-text-title">próspero</span> e{" "}
+        <span className="text-custom-text-title">lucrativo</span>:
       </h2>
       <p
         className="text-base text-center mt-4 font-normal text-white
@@ -53,18 +51,16 @@ const SectionTwo: React.FC = () => {
       <div className="flex justify-center items-center">
         <div
           className="pt-6 grid grid-cols-2 gap-4
-        sm:grid-cols-3 sm:gap-8
+        sm:gap-8
         md:gap-10
         lg:gap-14
         xl:gap-16 xl:max-w-full xl:w-full
       "
         >
-          <Card icon={icon1} title="Expansões" />
+          <Card icon={icon1} title="Imóveis prontos" />
           <Card icon={icon2} title="Construções" />
           <Card icon={icon3} title="Reformas" />
-          <Card icon={icon4} title="Aquisições" />
-          <Card icon={icon5} title="Capital de Giro" />
-          <Card icon={icon6} title="Preservação de Capital" />
+          <Card icon={icon4} title="Compra de terrenos" />
         </div>
       </div>
       <div
@@ -74,7 +70,7 @@ const SectionTwo: React.FC = () => {
       "
       >
         <Button
-          label="Quero agendar uma consultoria de crédito para meu negócio"
+          label="Quero agendar uma consultoria imobiliária."
           onClick={openModal}
         />
       </div>
